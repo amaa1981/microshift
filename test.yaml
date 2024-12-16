@@ -5,4 +5,4 @@
 
   tasks:
     - name: Command
-      command: echo ali
+      command: sudo dnf -y install microshift openshift-clients
