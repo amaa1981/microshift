@@ -7,8 +7,8 @@
     - name: install microshift
       command: sudo dnf -y install microshift openshift-clients
       
-      - name: copy our pull-secret
-        command: sudo cp $HOME/openshift-pull-secret /etc/crio/openshift-pull-secret && \ 
+    - name: copy our pull-secret
+      command: sudo cp $HOME/openshift-pull-secret /etc/crio/openshift-pull-secret && \ 
                sudo chown root:root /etc/crio/openshift-pull-secret && \
                sudo chmod 600 /etc/crio/openshift-pull-secret 
                
